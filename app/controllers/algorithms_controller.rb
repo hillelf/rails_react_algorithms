@@ -1,4 +1,4 @@
 class AlgorithmsController < ApplicationController
-  def list
+  def index
   end
 end
