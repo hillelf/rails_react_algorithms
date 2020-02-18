@@ -1,4 +1,6 @@
-import {createStore} from "redux";
+import {createStore, applyMiddleware} from "redux";
+
+import thunk from "redux-thunk";
 
 const initialState = {
   algorithms: [
@@ -20,12 +22,16 @@ const initialState = {
 function rootReducer(state, action) {
   console.log(action.type);
   switch (action.type) {
+    case "GET_ALGORITHMS_SUCCESS":
+      return {algorithms: action.json.algorithms};
+      break;
     default:
-      return state;
+      break;
   }
+  return state;
 }
 
 export default function configureStore() {
-  const store = createStore(rootReducer, initialState);
+  const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
   return store;
 }
