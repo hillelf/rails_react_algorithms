@@ -14,8 +14,8 @@ function getAlgorithms() {
 
 class HelloWorld extends React.Component {
   render() {
-    const {algos} = this.props;
-    const algorithmList = algos.map((algo, i) => {
+    const {algorithms} = this.props;
+    const algorithmList = algorithms.map((algo, i) => {
       return <li key={i}>{algo.name}</li>;
     });
 
@@ -35,7 +35,7 @@ class HelloWorld extends React.Component {
 }
 
 const structuredSelector = createStructuredSelector({
-  algos: state => state.algos
+  algorithms: state => state.algorithms
 });
 
 const mapDispatchToProps = {getAlgorithms};
