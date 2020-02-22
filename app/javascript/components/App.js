@@ -7,6 +7,8 @@ import {Provider} from "react-redux";
 
 import HelloWorld from "./HelloWorld";
 
+import Algorithms from "./Algorithms";
+
 import configureStore from "../configureStore";
 const store = configureStore();
 
@@ -20,7 +22,12 @@ class App extends React.Component {
             <Route
               exact
               path="/hello"
-              render={() => <HelloWorld greeting="Friend" />}
+              render={() => <HelloWorld greeting="Hello World!" />}
+            />
+            <Route
+              exact
+              path="/algorithms"
+              render={() => <Algorithms greeting="Friend" />}
             />
           </Switch>
         </BrowserRouter>

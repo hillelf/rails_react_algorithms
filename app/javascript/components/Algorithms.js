@@ -24,15 +24,14 @@ export function getAlgorithmsSuccess(json) {
   };
 }
 
-class HelloWorld extends React.Component {
-  render() {
-    const {algorithms} = this.props;
-    const algorithmList = algorithms.map((algo, i) => {
-      return <li key={i}>{algo.name}</li>;
-    });
+function Algorithm(props) {
+  const {algorithms} = props;
 
-    return <React.Fragment>{this.props.greeting}</React.Fragment>;
-  }
+  const algorithmList = algorithms.map((algo, i) => {
+    return <li key={i}>{algo.name}</li>;
+  });
+
+  return <ul>{algorithmList}</ul>;
 }
 
 const structuredSelector = createStructuredSelector({
@@ -41,8 +40,4 @@ const structuredSelector = createStructuredSelector({
 
 const mapDispatchToProps = {getAlgorithms};
 
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
-};
-
-export default connect(structuredSelector, mapDispatchToProps)(HelloWorld);
+export default connect(structuredSelector, mapDispatchToProps)(Algorithm);
