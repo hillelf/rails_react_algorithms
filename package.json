@@ -14,7 +14,9 @@
     "react_ujs": "^2.6.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0"
+    "reselect": "^4.0.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
     "install": "^0.13.0",
