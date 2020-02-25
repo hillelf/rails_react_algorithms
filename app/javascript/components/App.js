@@ -5,6 +5,8 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 import {Provider} from "react-redux";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import HelloWorld from "./HelloWorld";
 
 import Algorithms from "./Algorithms";

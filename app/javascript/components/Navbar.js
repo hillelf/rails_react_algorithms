@@ -1,21 +1,31 @@
 import React from "react";
-import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter, Switch, Route, Link, NavLink} from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 function Navbar() {
   return (
-    <nav className="menu">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/hello">Hello</Link>
-        </li>
-        <li>
-          <Link to="/algorithms">algorithms</Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <Nav
+        activeKey="/home"
+        onSelect={selectedKey => console.log(`selected ${selectedKey}`)}
+      >
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/home" eventKey="hello">
+            home
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/hello" eventKey="hello">
+            hello
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="algorithms" eventKey="algorithms">
+            algorithms
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </>
   );
 }
 
