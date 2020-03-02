@@ -7,16 +7,16 @@ import {composeWithDevTools} from "redux-devtools-extension";
 const initialState = {
   algorithms: [
     {
-      name: "Frequency Counter",
-      path: "/"
+      name: "FrequencyCounter",
+      path: "/frequencycounter"
     },
     {
-      name: "Multiple Pointers",
-      path: "/"
+      name: "MultiplePointers",
+      path: "/multiplepointers"
     },
     {
-      name: "Sliding Window",
-      path: "/"
+      name: "SlidingWindow",
+      path: "/slidingwindow"
     }
   ]
 };

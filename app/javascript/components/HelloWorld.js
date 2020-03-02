@@ -26,12 +26,15 @@ export function getAlgorithmsSuccess(json) {
 
 class HelloWorld extends React.Component {
   render() {
-    const {algorithms} = this.props;
-    const algorithmList = algorithms.map((algo, i) => {
-      return <li key={i}>{algo.name}</li>;
-    });
-
-    return <React.Fragment>{this.props.greeting}</React.Fragment>;
+    return (
+      <>
+        <div className="container">
+          <div className="row">
+            <p className="col-md-12 p-2">{this.props.greeting}</p>
+          </div>
+        </div>
+      </>
+    );
   }
 }
 
