@@ -17,6 +17,26 @@ const initialState = {
     {
       name: "SlidingWindow",
       path: "/slidingwindow"
+    },
+    {
+      name: "DivideConquer",
+      path: "/divideConquer"
+    },
+    {
+      name: "Recursion",
+      path: "/recursion"
+    },
+    {
+      name: "Sorting",
+      path: "/sorting"
+    },
+    {
+      name: "DataStructures",
+      path: "/dataStructures"
+    },
+    {
+      name: "Graphs",
+      path: "/graphs"
     }
   ]
 };

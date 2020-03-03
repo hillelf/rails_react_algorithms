@@ -4,7 +4,7 @@ class SlidingWindow extends Component {
   render() {
     return (
       <>
-        <h2>Sliding Window Algorithm</h2>
+        <h2 className="mt-5">Sliding Window Algorithm</h2>
         <p>
           This pattern involves creating a window which can either be an array
           or number from one position to another.

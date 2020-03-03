@@ -4,7 +4,7 @@ class MultiplePointers extends Component {
   render() {
     return (
       <>
-        <h2>Multiple Pointers Algorithm</h2>
+        <h2 className="mt-5">Multiple Pointers Algorithm</h2>
         <p>
           Creating pointers or values that correspond to an index or position
           and move towards the beginning, end or middle based on a certain

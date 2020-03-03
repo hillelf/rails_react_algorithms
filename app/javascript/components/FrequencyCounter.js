@@ -4,7 +4,7 @@ class FrequencyCounter extends Component {
   render() {
     return (
       <>
-        <h2>Frequency Counter Algorithm</h2>
+        <h2 className="mt-5">Frequency Counter Algorithm</h2>
         <p>
           This pattern uses objects or sets to collect values/frequencies of
           values.

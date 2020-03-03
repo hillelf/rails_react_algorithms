@@ -6,11 +6,11 @@ function Navbar() {
   return (
     <>
       <Nav
-        activeKey="/home"
+        activeKey="/"
         onSelect={selectedKey => console.log(`selected ${selectedKey}`)}
       >
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/home" eventKey="hello">
+          <Nav.Link as={NavLink} to="/" eventKey="home">
             home
           </Nav.Link>
         </Nav.Item>

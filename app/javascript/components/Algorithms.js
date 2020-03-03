@@ -7,6 +7,11 @@ import {Link} from "react-router-dom";
 import FrequencyCounter from "./FrequencyCounter";
 import MultiplePointers from "./MultiplePointers";
 import SlidingWindow from "./SlidingWindow";
+import DivideConquer from "./DivideConquer";
+import Recursion from "./Recursion";
+import Graphs from "./Graphs";
+import DataStructures from "./DataStructures";
+import Sorting from "./Sorting";
 
 const GET_ALGORITHMS_REQUEST = "GET_ALGORITHMS_REQUEST";
 const GET_ALGORITHMS_SUCCESS = "GET_ALGORITHMS_SUCCESS";
@@ -36,7 +41,12 @@ function Algorithm(props) {
   const components = {
     FrequencyCounter,
     MultiplePointers,
-    SlidingWindow
+    SlidingWindow,
+    DivideConquer,
+    Recursion,
+    DataStructures,
+    Graphs,
+    Sorting
   };
 
   const ActiveAlgorithm = components[active];
@@ -57,7 +67,7 @@ function Algorithm(props) {
 
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-4">
           <ul className="list-group col">{algorithmList}</ul>
         </div>

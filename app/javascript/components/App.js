@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 //components
 import HelloWorld from "./HelloWorld";
+import Home from "./Home";
 import Algorithms from "./Algorithms";
 import Navbar from "./Navbar";
 
@@ -24,17 +25,13 @@ class App extends Component {
           <BrowserRouter>
             <Navbar />
             <Switch>
-              <Route exact path="/" render={() => "Home!"} />
+              <Route exact path="/" render={() => <Home />} />
               <Route
                 exact
                 path="/hello"
                 render={() => <HelloWorld greeting="Hello World!" />}
               />
-              <Route
-                exact
-                path="/algorithms"
-                render={() => <Algorithms greeting="Friend" />}
-              />
+              <Route exact path="/algorithms" render={() => <Algorithms />} />
             </Switch>
           </BrowserRouter>
         </Provider>
